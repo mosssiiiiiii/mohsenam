@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import './../styles/styles.scss';
-
+import './../styles/home.scss';
 import SEO from "../components/seo"
 
 const IndexPage = () => (
