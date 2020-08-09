@@ -14,14 +14,33 @@ body{
     margin-right: -15px;
     margin-left: -15px;
 }
-
+.box-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 .box{
     height: 150px;
     margin-top:75px;
     width: 30px;
     background-color:#ffc980;
 }
+
 .name{
     font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+}
+
+
+.social-wrap {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
 }
