@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#011627;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.box{
+    height: 150px;
+    margin-top:75px;
+    width: 30px;
+    background-color:#ffc980;
+}
+.name{
+    font-size: 45px;
+    color: white;
+}
