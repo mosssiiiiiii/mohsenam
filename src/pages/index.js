@@ -7,23 +7,25 @@ const Home = () => {
   const height = window.innerHeight
   console.log(height)
   return (
-    <div style={{ maxHeight: height }} className="container">
+    <div className="container" style={{ maxHeight: height, height: height }}>
       <SEO title="Mohsen Haghighatkhah Portfolio" />
-      <div className="row">
-        <div className="box-wrap">
-          <div className="box"></div>
-          <div>
-            <h1 className="name">Mohsen Haghighatkhah</h1>
-            <p className="mode">Frontend developer</p>
-          </div>
+
+      <div className="intru-wrap">
+        <div className="image-wrap">
+          <div className="image"></div>
         </div>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-        <Link to="/aboutMe/">About me</Link> <br />
-        <div className='social-wrap'>
-            <h1>L</h1>
-            <h1>L</h1>
-            <h1>L</h1>
-            <h1>L</h1>
+        <div className="title-wrap">
+          <div className="title">
+            <h1 className='name'>MOHSEN</h1>
+            <h1>haghighat khah</h1>
+            <div className='social-media'>
+            <h2>Front-end Developer</h2>
+            
+            <div>
+            <h3>hello</h3>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

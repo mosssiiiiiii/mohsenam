@@ -1,46 +1,62 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color:#011627;
-}
+@import "./common.scss";
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intru-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: "row";
+  width: 100%;
+  max-width: 1100px;
+  max-height: 674px;
+  border: 3px solid green;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.row{
-    margin-right: -15px;
-    margin-left: -15px;
+.image-wrap {
+  width: 150px;
+  padding: 0 75px 0 150px;
 }
-.box-wrap{
+
+.title-wrap {
+  padding: 0;
+  flex: 1 1 auto;
+  .title h1 {
+    font-size: 65px;
+    margin: 0;
+    line-height: 63px;
+    color: #e0a80d;
+    font-weight: 600;
+  }
+  .title .name{
+    color: #a4a5a6;
+      font-weight: 200;
+  }
+  .title h2 {
+      font-size: 24px;
+      margin-top: 25px;
+      color: gray;
+      font-weight: 100;
+  }
+}
+.social-media{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 15px;
     flex-direction: row;
-}
-.box{
-    height: 150px;
-    margin-top:75px;
-    width: 30px;
-    background-color:#ffc980;
-}
-
-.name{
-    font-size: 45px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
+    justify-content: space-between;
 }
-
-
-.social-wrap {
-    display: flex;
-    position: absolute;
-    bottom: 20px;
-    justify-content: center;
-    align-items: center;    
-    width: 100%;
+.image {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 0 auto;
 }
