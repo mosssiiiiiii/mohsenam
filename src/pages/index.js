@@ -3,7 +3,12 @@ import { Link } from "gatsby"
 import "./../styles/home.scss"
 import SEO from "../components/seo"
 import img from "./../images/profile.jpg"
-import { FaStackOverflow , FaGithub , FaTwitter , FaLinkedin} from "react-icons/fa"
+import {
+  FaStackOverflow,
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+} from "react-icons/fa"
 const Home = () => {
   const height = window.innerHeight
   return (
@@ -22,14 +27,27 @@ const Home = () => {
               <h2>Front-end Developer</h2>
 
               <div className="social">
-                <h3>< FaStackOverflow /> </h3>
-                <h3>< FaGithub /> </h3>
-                <h3>< FaTwitter /> </h3>
-                <h3>< FaLinkedin /> </h3>
+                <a target='_blank' href="https://stackoverflow.com/users/10825919/mosssiiiiiii">
+                  <FaStackOverflow />{" "}
+                </a>
+                <a target='_blank' href='https://github.com/mosssiiiiiii'>
+                  <FaGithub />{" "}
+                </a>
+                <a target="_blank" href='https://twitter.com/mosssiiiiiii'>
+                  <FaTwitter />{" "}
+                </a>
+                <a target='_blank' href='https://www.linkedin.com/in/mohsen-haghighatkhah/'>
+                  <FaLinkedin />{" "}
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="footer">
+        <Link to="/aboutMe/">About</Link>
+        <Link to="/contact/">Contact</Link>
       </div>
     </div>
   )
