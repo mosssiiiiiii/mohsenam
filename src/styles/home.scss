@@ -1,16 +1,15 @@
 @import "./common.scss";
 .container {
   position: relative;
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .intru-wrap {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: "row";
+  // flex-wrap: wrap;
+  // flex-direction: "row";
+  flex-flow: row wrap;
   width: 100%;
   max-width: 1100px;
   max-height: 674px;
@@ -29,15 +28,16 @@
   padding: 0;
   flex: 1 1 auto;
   .title h1 {
-    font-size: 65px;
+    font-size: 75px;
     margin: 0;
-    line-height: 63px;
+    line-height: 74px;
     color: #e0a80d;
     font-weight: 600;
   }
   .title .name{
     color: #a4a5a6;
       font-weight: 200;
+      font-size: 55px;
   }
   .title h2 {
       font-size: 24px;
@@ -52,11 +52,25 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    .social{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h3{
+        color: white;
+        font-size: 24px;
+        margin: 0 5px;
+        cursor: pointer;
+        &:hover{
+          color: yellow;
+        }
+      }
+    }
 }
 .image {
   background-color: yellow;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   margin: 0 auto;
 }
