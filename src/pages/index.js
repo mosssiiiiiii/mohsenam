@@ -12,10 +12,10 @@ import {
 const Home = () => {
   const height = window.innerHeight
   return (
-    <div className="container" style={{ maxHeight: height, height: height }}>
+    <div id='hme' className="container" style={{ maxHeight: height, height: height }}>
       <SEO title="Mohsen Haghighatkhah Portfolio" />
 
-      <div className="intru-wrap">
+      <div className="wrap">
         <div className="image-wrap">
           <img className="image" src={img} />
         </div>

@@ -1,1 +1,109 @@
 @import './common.scss';
+@import './variable.scss';
+
+#abt{
+    padding-top: 50px;
+    .about-me-wrap{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .image-wrap {
+        width: 200px;
+        padding: 0 75px 0 0;
+        .image {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin: 0 auto;
+          }
+    }
+
+    .desc-wrap{
+        flex:1;
+        h3{
+            color: $gray;
+            margin-top: 5px;
+        }
+        h1{
+            margin: 0;
+            span{
+                color: $yellow;
+                font-weight: 100;
+            }
+            font-weight: 500;
+            color: $lightGray;
+        }
+        p{
+            color: $lightGray;
+            font-size: 20px;
+            line-height: 32px;
+            text-align:justify;
+        }
+    }
+    .title-wrap{
+        width: 100%;
+        position: relative;
+        border-top: 1px solid $white;
+        height: 45px;
+        margin-top: 85px;
+        h1{
+            position: absolute;
+            color: $yellow;
+            display: inline;
+            background-color: $background;
+            position: absolute;
+            top: -42px;
+            padding: 0 26px 0 0;
+        }
+    }
+    .exprience{
+        border-left: 1px solid $lightGray;
+        padding-left: 15px;
+        position: relative;
+        padding-bottom: 25px;
+        h2{
+            color: $heavyWhite;
+            margin:0;
+            span{
+                color: $yellow;
+                font-size: 13px;
+                font-weight: 100;
+            }
+            &::before{
+                content: '';
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                left: -6px;
+                top: 9px;
+                background-color: $lightGray;
+                border-radius: 100%;
+            }
+        }
+
+        h3{
+            color: $heavyWhite;
+            margin: 10px 0;
+            font-weight: 200;
+            >span{
+                margin-left: 15px;
+                font-size: 13px;
+                color: $yellow;
+            }
+        }
+        h4{
+            color: $heavyWhite;
+            margin:10px 0;
+            font-weight: 100;
+        }
+        ul{
+            color: $heavyWhite;
+            li{
+                margin-bottom: 15px;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
