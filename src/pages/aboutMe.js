@@ -1,40 +1,49 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import img from "./../images/profile.jpg"
 import "./../styles/aboutMe.scss"
 import Exprience from "../components/Exprience"
-
+import Skill from "../components/Skill"
+import Education from "../components/Education"
+import {FaAngleLeft} from "react-icons/fa"
+import Language from "../components/Language"
+import Information from "../components/Information"
+import SocialNetwork from "../components/SocialNetwork"
 const AboutMe = () => (
   <div id="abt" className="container">
     <SEO title="about me " />
     <div className="wrap">
-      <div className="about-me-wrap">
-        <div className="image-wrap">
-          <img className="image" src={img} />
-        </div>
-        <div className="desc-wrap">
-          <h1> <span>MOHSEN</span> haghighat khah</h1>
-          <h3>Front-end developer</h3>
-          <p>
-            A motivated Frontend developer with over 6 years of experience in
-            Javascript and react. Love to solve new challenges and find
-            solutions. eager to learn on a daily basis that knows this career is
-            a nonstop learning process. I want to improve myself every day and
-            associate with a vibrant organization in order to fully utilize my
-            knowledge, skills and to contribute to its overall growth
-          </p>
-        </div>
-      </div>
+      <Link to="/" className='back'>
+        <FaAngleLeft/>
+        <span>Home</span>
+      </Link>
+      
+      <Information/>
       <div className='title-wrap'>
         <h1>Exprience</h1>
       </div>
      <Exprience />
 
+     <div className='title-wrap'>
+        <h1>Technical Skill</h1>
+      </div>
+     <Skill />
+
 
      <div className='title-wrap'>
-        <h1>EDUCATION</h1>
+        <h1>Education</h1>
       </div>
+      <Education/>
+
+      <div className='title-wrap'>
+        <h1>Language</h1>
+      </div>
+      <Language/>
+
+      <div className='title-wrap'>
+        <h1>Social Network</h1>
+      </div>
+      <SocialNetwork/>
 
     </div>
   </div>

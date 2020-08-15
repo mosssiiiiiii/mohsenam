@@ -2,7 +2,21 @@
 @import './variable.scss';
 
 #abt{
-    padding-top: 50px;
+    padding: 25px 0;
+    .back{
+        padding: 30px 0 45px 0;
+        color: $gray;
+        display: flex;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            color: $white;
+        }
+        span{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
     .about-me-wrap{
         display: flex;
         flex-flow: row wrap;
@@ -46,7 +60,7 @@
         position: relative;
         border-top: 1px solid $white;
         height: 45px;
-        margin-top: 85px;
+        margin-top: 65px;
         h1{
             position: absolute;
             color: $yellow;
@@ -57,7 +71,24 @@
             padding: 0 26px 0 0;
         }
     }
-    .exprience{
+
+    .information-wrap{
+        display: flex;
+        flex:1;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+        .item{
+            display: flex;
+            color: $yellow;
+            text-decoration: none;
+            span{
+                margin-left: 10px;
+                color: $heavyWhite;
+            }
+        }
+    }
+    .exprience {
         border-left: 1px solid $lightGray;
         padding-left: 15px;
         position: relative;
@@ -103,6 +134,77 @@
                 margin-bottom: 15px;
                 font-size: 18px;
                 line-height: 26px;
+            }
+        }
+    }
+
+    .skill {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .skill-box{
+        width: $maxWidth / 3 - 40px;
+        min-height: 80px;
+        padding: 15px;
+        >h3{
+            color: $yellow;
+            padding-left: 8px;
+            font-weight: 600;
+            position: relative;
+            >span{
+                font-Size: 14px;
+                color: $heavyWhite;
+                font-weight: 100;
+
+            }
+             &::before{
+                content:'';
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: $white;
+                position: absolute;
+                left: -8px;
+                top: 6px;
+            }
+        }
+        >span{
+            color: $heavyWhite;
+            font-size: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+            line-height: 35px;
+        }
+    }
+
+    .education{
+        h2,h4,h5 {
+            margin: 10px 0;
+            color: $heavyWhite;
+        }
+        h4,h5{
+            >span{
+                color: $yellow;
+            }
+            font-weight: 100;
+            color: $gray;
+        }
+    }
+
+    .social-network{
+        display: flex;
+        flex:1;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        padding-bottom: 45px;
+        a{
+            text-decoration: none;
+            color: $gray;
+            font-size: 32px;
+            margin-right: 15px;
+            &:hover{
+                color: $yellow
             }
         }
     }

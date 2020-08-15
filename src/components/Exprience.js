@@ -2,7 +2,7 @@ import React from "react"
 import { exprience } from "../api/exprience"
 const Exprience = () =>
   exprience.map((item, index) => (
-    <div className="exprience">
+    <div key="index" className="exprience">
       <h2>
         {item.title}  <span>({item.contract})</span>
       </h2>
